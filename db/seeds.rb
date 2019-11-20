@@ -4,4 +4,8 @@
 # Examples:
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Student.destroy_all
+17.times do
+    Student.create(first_name: 'Emanuel[0]', last_name: 'Last[0]')
+end
